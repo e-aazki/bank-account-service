@@ -1,0 +1,17 @@
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\BankAccountServiceApplication.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\dto\CompteRequestDTO.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\dto\CompteResponseDTO.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\entities\Client.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\entities\Compte.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\entities\CompteDetailsProjection.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\entities\CompteProjection.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\enums\TypeCompte.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\exceptions\CompteNotFoundException.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\mappers\CompteMapper.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\repositories\ClientRepository.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\repositories\CompteRepository.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\service\CompteService.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\service\CompteServiceImpl.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\web\CompteGraphQLController.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\web\CompteRestController.java
+C:\Users\Integral\Desktop\Master\Antigravity\Systèmes Distribués Agentique\ActivitePratiqueN1\bank-account-service\src\main\java\ma\enset\bankaccountservice\web\CustomDataFetcherExceptionResolver.java

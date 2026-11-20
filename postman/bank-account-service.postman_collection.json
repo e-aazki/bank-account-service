@@ -1,0 +1,73 @@
+{
+  "info": {
+    "name": "bank-account-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8081" },
+    { "key": "compteId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "REST - Lister les comptes",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/comptes" }
+    },
+    {
+      "name": "REST - Créer un compte",
+      "event": [{
+        "listen": "test",
+        "script": { "exec": [
+          "pm.test('201 Created', () => pm.response.to.have.status(201));",
+          "pm.collectionVariables.set('compteId', pm.response.json().id);"
+        ] }
+      }],
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/api/comptes",
+        "body": { "mode": "raw", "raw": "{\n  \"solde\": 7500,\n  \"devise\": \"EUR\",\n  \"type\": \"COMPTE_EPARGNE\"\n}" }
+      }
+    },
+    {
+      "name": "REST - Consulter un compte",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/comptes/{{compteId}}" }
+    },
+    {
+      "name": "REST - Modifier un compte",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/api/comptes/{{compteId}}",
+        "body": { "mode": "raw", "raw": "{\n  \"solde\": 12000\n}" }
+      }
+    },
+    {
+      "name": "REST - Supprimer un compte",
+      "request": { "method": "DELETE", "url": "{{baseUrl}}/api/comptes/{{compteId}}" }
+    },
+    {
+      "name": "Spring Data REST - Comptes (projection p1)",
+      "request": { "method": "GET", "url": "{{baseUrl}}/comptes?projection=p1" }
+    },
+    {
+      "name": "Spring Data REST - Recherche par type (projection details)",
+      "request": { "method": "GET", "url": "{{baseUrl}}/comptes/search/byType?t=COMPTE_COURANT&projection=details" }
+    },
+    {
+      "name": "GraphQL - Clients et leurs comptes",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/graphql",
+        "body": { "mode": "graphql", "graphql": { "query": "query {\n  clients {\n    id\n    nom\n    comptes { id solde type }\n  }\n}" } }
+      }
+    },
+    {
+      "name": "GraphQL - Ajouter un compte",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/graphql",
+        "body": { "mode": "graphql", "graphql": { "query": "mutation {\n  addCompte(compte: {solde: 4200, devise: \"USD\", type: COMPTE_COURANT}) {\n    id solde devise type\n  }\n}" } }
+      }
+    }
+  ]
+}
